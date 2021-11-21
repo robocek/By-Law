@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[a4paper, total={6in, 9.5in}]{geometry}
+
+\usepackage[pdftex]{graphicx} %for embedding images
+\usepackage{subfig}
+\usepackage{url} %for proper url entries
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{ragged2e}
+\usepackage{fontawesome5}
+
+\usepackage{hyperref}
+
+\begin{document}	
+	\onehalfspacing
+	
+%	\renewcommand{\chaptername}{Experiment}
+	
+	%include other pages
+	\input{frontcover.tex}
+	\input{visionmission.tex}
+	
+	
+	\pagenumbering{roman} %numbering before main content starts
+	\setcounter{page}{0}
+	
+	\tableofcontents
+	
+	\cleardoublepage
+	\pagenumbering{arabic} %reset numbering to normal for the main content
+	
+	
+	\input{about-us.tex}
+	\input{organization-chart.tex}
+	\input{general-guidelines.tex}
+	\input{roles-responcibilities.tex}
+	\input{misellaneous.tex}
+	
+\end{document}
